@@ -496,9 +496,13 @@ footer .container {
 .social-links {
   display: flex;
   gap: 16px;
-  max-width: 208px;
 }
 
+footer .social-links {
+  display: flex;
+  gap: 16px;
+  max-width: 208px;
+}
 
 .social-link-media {
   width: 40px;
