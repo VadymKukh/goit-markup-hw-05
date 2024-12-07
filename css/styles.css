@@ -632,11 +632,6 @@ margin-bottom: 8px;
   
 }
 
-.form-foot label {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
 
 .form-foot input {
   padding-top: 8px;
@@ -668,7 +663,6 @@ margin-bottom: 8px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 16px;
   align-self: flex-end;
   width: 165px;
   height: 40px;
@@ -676,14 +670,16 @@ margin-bottom: 8px;
   padding: 8px 24px;
   width: 165px;
   height: 40px;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif; 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
-  color: #fff;
+  
+  color: #ffffff;
   cursor: pointer;
+  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -692,8 +688,18 @@ margin-bottom: 8px;
  background-color: #404bbf;
 }
 
+.subscr-abzac {
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #ffffff;
+margin-bottom: 16px;
+}
+
 .btn-svg-foot {
   fill: white;
+  margin-left: 16px;
 }
 
 .footer-media {
@@ -709,13 +715,24 @@ margin-bottom: 8px;
   color: #ffffff;
 }
 
-.subscr-descr input::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #fff;
+.inp-foot-dscr {
+  border: 1px solid #fff;
+border-radius: 4px;
+width: 264px;
+height: 40px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background-color: transparent;
+font-weight: 400;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+color: #ffffff;
 }
+
+.inp-foot-dscr::placeholder {
+  color: #ffffff;
+}
+
 
 .modal-overlay {
   position: fixed;
