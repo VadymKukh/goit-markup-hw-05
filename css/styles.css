@@ -664,7 +664,7 @@ margin-bottom: 8px;
   justify-content: center;
   flex-direction: row;
   align-self: flex-end;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   border-radius: 4px;
   padding: 8px 24px;
@@ -717,16 +717,16 @@ margin-bottom: 16px;
 
 .inp-foot-dscr {
   border: 1px solid #fff;
-border-radius: 4px;
-width: 264px;
-height: 40px;
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-background-color: transparent;
-font-weight: 400;
-font-size: 12px;
-line-height: 2;
-letter-spacing: 0.04em;
-color: #ffffff;
+ border-radius: 4px;
+ width: 264px;
+ height: 40px;
+ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+ background-color: transparent;
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 2;
+ letter-spacing: 0.04em;
+ color: #ffffff;
 }
 
 .inp-foot-dscr::placeholder {
@@ -745,10 +745,9 @@ color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: auto;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -881,7 +880,6 @@ stroke-width: 1px;
 stroke: rgba(0, 0, 0, 0.1);
 width: 100%;
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 
@@ -900,20 +898,16 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-close:hover,
 .icon-close:focus {
   background-color: #404bbf;
+  border: transparent;
   
 }
 
-.icon-close:hover,
-.icon-close:focus {
-  border: transparent;
-}
 
 .icon-close:hover .top-icon-modal,
 .icon-clos:focus .top-icon-modal {
@@ -934,12 +928,10 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-div-modal:focus .icon-modal-sv {
-  fill: #4d5ae5;
+.input-div-modal:focus-within .icon-modal-sv {
+  fill: #4D5AE5;
 }
-.input-div-modal:hover .icon-modal-sv {
-  fill: #4d5ae5;
-}
+
 
 .inp-modal-lb {
   margin-bottom: 8px;
