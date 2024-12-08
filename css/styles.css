@@ -745,8 +745,8 @@ color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  pointer-events: auto;
-  opacity: 1;
+  pointer-events: none;
+  opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
