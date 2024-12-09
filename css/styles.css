@@ -656,7 +656,6 @@ footer .social-links {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
   color: #ffffff;
   cursor: pointer;
   border: none;
@@ -709,6 +708,13 @@ footer .social-links {
   color: #ffffff;
 }
 
+.inp-foot-dscr {
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
 .inp-foot-dscr::placeholder {
   color: #ffffff;
 }
@@ -724,8 +730,8 @@ footer .social-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  pointer-events: none;
-  opacity: 0;
+  pointer-events: auto;
+  opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -876,8 +882,7 @@ footer .social-links {
   padding: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-close:hover,
@@ -942,7 +947,7 @@ footer .social-links {
   fill: transparent;
 }
 
-[type='checkbox']:checked + .icon-chbox {
+[type='checkbox']:checked + label .icon-chbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
